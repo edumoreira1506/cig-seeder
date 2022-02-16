@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/edumoreira1506/cig-seeder/issues"
   },
-  "homepage": "https://github.com/edumoreira1506/cig-seeder#readme"
+  "homepage": "https://github.com/edumoreira1506/cig-seeder#readme",
+  "dependencies": {
+    "faker": "^6.6.6"
+  }
 }

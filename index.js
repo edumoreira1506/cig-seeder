@@ -88,7 +88,7 @@ const PoultriesFactory = async (user, breeder, token) => {
       token,
       {
         externalId: poultryResponseData.poultry.id,
-        price: 150
+        price: 15000
       }
     )
 
@@ -150,7 +150,7 @@ const PoultriesFactory = async (user, breeder, token) => {
       token,
       {
         externalId: poultryResponseData.poultry.id,
-        price: 150
+        price: 15000
       }
     )
 
@@ -213,7 +213,7 @@ const PoultriesFactory = async (user, breeder, token) => {
       token,
       {
         externalId: poultryResponseData.poultry.id,
-        price: 150
+        price: 15000
       }
     )
 
@@ -276,7 +276,7 @@ const PoultriesFactory = async (user, breeder, token) => {
       token,
       {
         externalId: poultryResponseData.poultry.id,
-        price: 150
+        price: 15000
       }
     )
 

@@ -1,0 +1,19 @@
+{
+  "name": "cig-seeder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edumoreira1506/cig-seeder.git"
+  },
+  "author": "Eduardo Moreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edumoreira1506/cig-seeder/issues"
+  },
+  "homepage": "https://github.com/edumoreira1506/cig-seeder#readme"
+}

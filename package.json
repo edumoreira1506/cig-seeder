@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/edumoreira1506/cig-seeder#readme",
   "dependencies": {
-    "@cig-platform/auth-bff-client": "^0.1.7",
-    "@cig-platform/backoffice-bff-client": "^0.0.39",
-    "@cig-platform/enums": "^0.0.3",
-    "@cig-platform/factories": "^0.0.14",
+    "@cig-platform/auth-bff-client": "^0.1.11",
+    "@cig-platform/backoffice-bff-client": "^0.0.48",
+    "@cig-platform/enums": "^0.0.6",
+    "@cig-platform/factories": "^0.0.21",
     "dotenv": "^16.0.0",
     "faker": "^6.6.6"
   }

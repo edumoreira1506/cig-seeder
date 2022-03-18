@@ -25,5 +25,8 @@
     "@cig-platform/factories": "^0.0.21",
     "dotenv": "^16.0.0",
     "faker": "^6.6.6"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0"
   }
 }

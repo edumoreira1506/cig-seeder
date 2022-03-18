@@ -48,9 +48,10 @@ const PoultriesFactory = async (user, breeder, token) => {
     delete poultry['id']
     delete poultry['number']
     delete poultry['videos']
-    delete poultry['description']
     delete poultry['birthDate']
-    delete poultry['register']
+    delete poultry['forSale']
+    delete poultry['currentAdvertisingPrice']
+    delete poultry['description']
 
     const poultryResponseData = await backofficeBffClient.postPoultry(
       breeder.id,
@@ -113,6 +114,8 @@ const PoultriesFactory = async (user, breeder, token) => {
     delete poultry['description']
     delete poultry['birthDate']
     delete poultry['register']
+    delete poultry['forSale']
+    delete poultry['currentAdvertisingPrice']
 
     const poultryResponseData = await backofficeBffClient.postPoultry(
       breeder.id,
@@ -175,7 +178,9 @@ const PoultriesFactory = async (user, breeder, token) => {
     delete poultry['videos']
     delete poultry['description']
     delete poultry['birthDate']
+    delete poultry['forSale']
     delete poultry['register']
+    delete poultry['currentAdvertisingPrice']
 
     const poultryResponseData = await backofficeBffClient.postPoultry(
       breeder.id,
@@ -235,10 +240,12 @@ const PoultriesFactory = async (user, breeder, token) => {
     delete poultry['active']
     delete poultry['id']
     delete poultry['number']
+    delete poultry['forSale']
     delete poultry['videos']
     delete poultry['description']
     delete poultry['birthDate']
     delete poultry['register']
+    delete poultry['currentAdvertisingPrice']
 
     const poultryResponseData = await backofficeBffClient.postPoultry(
       breeder.id,
@@ -309,6 +316,7 @@ const UserAndBreederFactory = async () => {
   delete breeder['profileImageUrl']
   delete breeder ['active']
   delete breeder['images']
+  delete breeder['createdAt']
   
   try {
     const userResponseData = await authBffClient.registerUser(
@@ -326,6 +334,7 @@ const UserAndBreederFactory = async () => {
 
     await PoultriesFactory(userResponseData.user, userResponseData.breeder, token)
   } catch (error) {
+    console.log(error)
     console.error('ERROR::', error)
   }
 }

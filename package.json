@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/edumoreira1506/cig-seeder#readme",
   "dependencies": {
-    "@cig-platform/auth-bff-client": "^0.1.11",
+    "@cig-platform/auth-bff-client": "^0.1.12",
     "@cig-platform/backoffice-bff-client": "^0.0.48",
     "@cig-platform/enums": "^0.0.6",
     "@cig-platform/factories": "^0.0.21",
@@ -27,6 +27,6 @@
     "faker": "^6.6.6"
   },
   "devDependencies": {
-    "@faker-js/faker": "^6.0.0"
+    "@faker-js/faker": "^6.1.2"
   }
 }

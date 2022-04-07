@@ -2,7 +2,7 @@ import dotEnv from 'dotenv'
 import AuthBffClient from '@cig-platform/auth-bff-client'
 import BackofficeBffClient from '@cig-platform/backoffice-bff-client'
 import { breederFactory, poultryFactory, userFactory } from '@cig-platform/factories'
-import { PoultryColorEnum, PoultryGenderCategoryEnum, PoultryGenderEnum, RegisterTypeEnum } from '@cig-platform/enums'
+import { PoultryColorEnum, PoultryGenderCategoryEnum, PoultryGenderEnum, RegisterTypeEnum, UserRegisterTypeEnum } from '@cig-platform/enums'
 
 dotEnv.config()
 
@@ -12,8 +12,8 @@ const PASSWORD = process.env.PASSWORD
 
 console.info(`>>>>>>>>> STARTING SEEDING WITH PASSWORD ${PASSWORD}`)
 
-const USERS_AMOUNT = 1;
-const POULTRY_AMOUNT_PER_GENDER = 1;
+const USERS_AMOUNT = 4;
+const POULTRY_AMOUNT_PER_GENDER = 20;
 
 const authBffClient = new AuthBffClient.default(AUTH_BFF_URL)
 const backofficeBffClient = new BackofficeBffClient.default(BACKOFFICE_BFF_URL)
@@ -321,7 +321,10 @@ const UserAndBreederFactory = async () => {
   try {
     const userResponseData = await authBffClient.registerUser(
       user,
-      breeder
+      breeder,
+      UserRegisterTypeEnum.Default,
+      undefined,
+      '(15) 99798-6248'
     )
 
     console.log(`Logging as ${userResponseData.user.email}`)
